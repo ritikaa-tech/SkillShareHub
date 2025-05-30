@@ -10,7 +10,7 @@ const coursesRoutes = require('./routes/courses');
 const reviewRoutes = require('./routes/reviews');
 const authMiddleware = require('./middleware/auth'); // Assuming you have an auth middleware
 const paymentRoutes = require('./routes/payment');
-const adminRoutes = require('./routes/admin'); // Uncomment if you have admin routes
+//const adminRoutes = require('./routes/admin'); // Uncomment if you have admin routes
 
 const app = express();
 // Middleware
@@ -31,7 +31,7 @@ app.use('/api/users', userRoutes);
 app.use('/api/courses', coursesRoutes);
 app.use('/api/reviews', reviewRoutes);
 app.use('/api/payment', paymentRoutes); // Ensure this is the correct path
-app.use('/api/admin', adminRoutes);
+//app.use('/api/admin', adminRoutes);
 
 
 
